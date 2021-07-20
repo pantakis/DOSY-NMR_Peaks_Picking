@@ -301,7 +301,7 @@ else
             PEAK_LIST = TEMP_DATA(o,1);
             EXP_AMPLITUDE = TEMP_DATA(o,2);
             FIT_AMPLITUDE = TEMP_DATA(o,3);
-            Diff_COEF = TEMP_DATA(o,5)/10;                
+            Diff_COEF = TEMP_DATA(o,5); %/10;                
             Peak_NUM = [1:1:length(o)]';            
             TT = table(Peak_NUM,PEAK_LIST,EXP_AMPLITUDE,FIT_AMPLITUDE,Diff_COEF);
             outputfile = [handles.Spectra_Titles{p} '_' handles.metab_name '_myData.csv'];
